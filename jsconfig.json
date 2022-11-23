@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"target": "ESNext",
+		"jsx": "react",
+		"checkJs": true,
+		"strict": true,
+		"allowSyntheticDefaultImports": false,
+		"alwaysStrict": true,
+		"noImplicitReturns": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitThis": true,
+		"experimentalDecorators": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true
+	},
+	"exclude": [
+		"node_modules",
+		"**/node_modules/*"
+	]
+}
