@@ -1,0 +1,23 @@
+{
+	"name": "babel-preset-dawnie",
+	"description": "Babel preset used by Dawnie~",
+	"packageManager": "yarn@3.3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/voidei/scungus.git",
+		"directory": "packages/babel-preset-dawnie"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/voidei/scungus/issues"
+	},
+	"files": [
+		"create.js",
+		"dependencies.js",
+		"dev.js",
+		"index.js",
+		"webpack-overrides.js",
+		"prod.js",
+		"test.js"
+	]
+}

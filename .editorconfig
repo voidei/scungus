@@ -1,0 +1,34 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~        Dawnie's .editorconfig~        ~#
+#~                                       ~#
+#~       https://editorconfig.org/       ~#
+#~                                       ~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+
+
+root = true
+; so it knows to stop looking for other configs when it finds this one
+
+
+; settings for all files and filetypes
+[*]
+end_of_line = crlf
+charset = utf-8
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+
+
+; typescript, javascript, react, and json settings
+[*.{ts,js,tsx,jsx,json,jsonc}]
+indent_size = 2
+tab_width = 2
+indent_style = tab
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+
+; yml and markdown, note this one **needs** to be 2 spaces indent
+[*.{yml,md}]
+indent_style = space
+indent_size = 2

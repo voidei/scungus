@@ -1,0 +1,44 @@
+{
+	"usePnP": true,
+	"pnpFiles": [
+		".pnp.js",
+		".pnp.cjs"
+	],
+	"allowCompoundWords": true,
+	"caseSensitive": false,
+	"enabled": true,
+	"enableFiletypes": [],
+	"enabledLanguageIds": [],
+	"files": [],
+	"gitignoreRoot": [],
+	"useGitignore": true,
+	"ignoreRegExpList": [],
+	"language": "en",
+	"languageId": "en-US",
+	"dictionaries": [
+		"en-gb",
+		"en_US",
+		"companies",
+		"softwareTerms",
+		"misc",
+		"typescript",
+		"node",
+		"php",
+		"go",
+		"python",
+		"powershell",
+		"html",
+		"css",
+		"cpp",
+		"csharp",
+		"latex",
+		"bash",
+		"fonts",
+		"filetypes",
+		"npm"
+	],
+	"words": [
+		"pmmmwh",
+		"svgr"
+		]
+}
