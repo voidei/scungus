@@ -1,0 +1,38 @@
+/* sample styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chucky-container {
+  width: 50%;
+  height: 50%;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+h1 {
+  color: orangered;
+  text-align: center;
+}
+
+.root {
+  background-color: #313131;
+}
+
+.text.center.top {
+  padding: ;
+  text-align: center;
+  color: #fff;
+}
