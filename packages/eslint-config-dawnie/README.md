@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD001 -->
-# babel-preset-dawnie
+# eslint-config-dawnie
 
 just a babel preset i'll be using for my shit lol
 
@@ -7,11 +7,11 @@ just a babel preset i'll be using for my shit lol
 
 ### Credits
 
-This [Babel](https://babeljs.io/) preset was created using the [babel-preset-react-app](https://github.com/facebook/create-react-app/tree/main/packages/babel-preset-react-app#README.md) from [Create React App](https://github.com/facebook/create-react-app).
+This [ESLint](https://eslint.org/) preset was created using the [eslint-config-react-app]<<https://github.com/facebook/create-react-app/tree/main/packages/eslint-config-react-app#README.md>) from [Create React App](https://github.com/facebook/create-react-app).
 All rights reserved to [Facebook](https://github.com/facebook/) for any content explicitly created by them.
 This further extends to any content that has only been lightly modified (i.e. typos, single word additions), in addition to functions, constants, or other elements of code, that have been modified only to change the output format (i.e. CommonJS Module to ES Module) without significantly changing, removing, or otherwise editing the function to be explicitly different from the original.
 
-[LICENSE](https://github.com/facebook/create-react-app/blob/main/packages/babel-preset-react-app/LICENSE)
+[LICENSE](https://github.com/facebook/create-react-app/blob/main/packages/eslint-config-react-app/LICENSE)
 
 ```plaintext
 MIT License

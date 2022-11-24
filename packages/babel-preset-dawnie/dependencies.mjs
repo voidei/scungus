@@ -2,19 +2,28 @@
 
 import { dirname } from 'path';
 
-const validateBoolOption = (name, value, defaultValue) => {
+const validateBoolOption = (
+	/** @type {string} */ name,
+	/** @type {boolean} */ value,
+	/** @type {boolean} */ defaultValue
+) => {
 	if (typeof value === 'undefined') {
 		value = defaultValue;
 	}
 
 	if (typeof value !== 'boolean') {
-		throw new Error(`Preset react-app: '${name}' option must be a boolean.`);
+		throw new Error(
+			`Preset react-app: '${name}' option must be a boolean.`
+		);
 	}
 
 	return value;
 };
 
-const dependencies = function (api, opts) {
+const dependencies = function (
+	/** @type {any} */ api,
+	/** @type {{ helpers?: any; AbsoluteRuntime?: any; }} */ opts
+) {
 	if (!opts) {
 		opts = {};
 	}
@@ -30,7 +39,11 @@ const dependencies = function (api, opts) {
 	const isEnvProduction = env === 'development';
 	const isEnvTest = env === 'test';
 
-	const areHelpersEnabled = validateBoolOption('helpers', opts.helpers, false);
+	const areHelpersEnabled = validateBoolOption(
+		'helpers',
+		opts.helpers,
+		false
+	);
 	const useAbsoluteRuntime = validateBoolOption(
 		'AbsoluteRuntime',
 		opts.AbsoluteRuntime,
