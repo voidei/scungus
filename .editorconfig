@@ -20,10 +20,18 @@ trim_trailing_whitespace = unset
 
 
 ; typescript, javascript, react, and json settings
-[*.{ts,js,tsx,jsx,json,jsonc}]
+[*.{ts,js,mjs,cjs,tsx,jsx}]
+indent_size = 4
+tab_width = 4
+indent_style = tab
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+
+[*.{json,jsonc,json5}]
+indent_style = space
 indent_size = 2
 tab_width = 2
-indent_style = tab
 trim_trailing_whitespace = true
 insert_final_newline = true
 
