@@ -38,7 +38,10 @@
 		"npm"
 	],
 	"words": [
+		"icss",
 		"pmmmwh",
-		"svgr"
-		]
+		"sockjs",
+		"svgr",
+		"tsdoc"
+	]
 }
