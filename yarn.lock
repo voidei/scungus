@@ -3808,7 +3808,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-dawnie@workspace:*, babel-preset-dawnie@workspace:packages/babel-preset-dawnie":
+"babel-preset-dawnie@workspace:packages/babel-preset-dawnie":
   version: 0.0.0-use.local
   resolution: "babel-preset-dawnie@workspace:packages/babel-preset-dawnie"
   dependencies:
@@ -10621,6 +10621,9 @@ __metadata:
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/eslint-parser": ^7.19.1
+    "@babel/preset-env": ^7.20.2
+    "@babel/preset-react": ^7.18.6
+    "@babel/preset-typescript": ^7.18.6
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.9
     "@svgr/webpack": ^6.5.1
     "@testing-library/dom": ^8.19.0
@@ -10628,6 +10631,7 @@ __metadata:
     "@testing-library/react": ^13.4.0
     "@testing-library/user-event": ^14.4.3
     "@types/babel__core": ^7.1.20
+    "@types/babel__preset-env": ^7.9.2
     "@types/jest": ^29.2.3
     "@types/node": ^18.11.9
     "@types/react": ^18.0.25
@@ -10644,7 +10648,6 @@ __metadata:
     babel-jest: ^29.3.1
     babel-loader: ^9.1.0
     babel-plugin-named-asset-import: ^0.3.8
-    babel-preset-dawnie: "workspace:*"
     bfj: ^7.0.2
     browserslist: ^4.21.4
     camelcase: ^7.0.0
