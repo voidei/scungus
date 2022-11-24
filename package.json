@@ -186,7 +186,6 @@
   },
   "babel": {
     "presets": [
-      "module:dawnie"
       "@babel/react",
       "@babel/env",
       "@babel/typescript"
