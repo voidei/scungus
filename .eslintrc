@@ -1,0 +1,26 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"worker": true,
+		"jest": true,
+		"es6": true,
+		"commonjs": true
+	},
+	"overrides": [
+		{
+			"files": ["tsconfig.json", "tsconfig.*.json"],
+			"parser": "jsonc-eslint-parser",
+			"parserOptions": {
+				"jsonSyntax": "JSONC"
+			}
+		},
+		{
+			"files": ["*.json"],
+			"parser": "jsonc-eslint-parser",
+			"parserOptions": {
+				"jsonSyntax": "JSON"
+			}
+		}
+	]
+}

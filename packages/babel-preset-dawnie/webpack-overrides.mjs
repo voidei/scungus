@@ -1,8 +1,9 @@
 // webpack-overrides.mjs
 
-import crypto from 'crypto';
+import * as crypto from 'crypto';
 
 const macroCheck = /[./]macro/;
+
 
 const webpackOverride = function () {
 	return {
