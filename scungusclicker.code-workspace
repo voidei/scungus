@@ -20,7 +20,8 @@
 			"build": true,
 			".yarn": true,
 			"packages": false,
-			"*.lock": true
+			"*.lock": true,
+			".idea": true,
 		},
 		"search.exclude": {
 			"**/node_modules": true,
@@ -29,7 +30,8 @@
 			"build": true,
 			".yarn": true,
 			"packages": true,
-			"*.lock": true
+			"*.lock": true,
+			".idea": true,
 		},
 		"files.associations": {
 			"license": "plaintext"
