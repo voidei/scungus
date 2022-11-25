@@ -1,11 +1,12 @@
 <!-- markdownlint-disable MD033 -->
-# scungusclicker~&excl;
+
+# ![scungus&colon;&rpar;](https://raw.githubusercontent.com/voidei/scungusclicker-archive/main/src/img/scungus.gif)
 
 ## the bad news&colon;
 
 ### scungus is gone
 
-## :(
+## &colon;&lpar;
 
 ## the good news&excl;
 
@@ -13,22 +14,22 @@
 
 ### he even **spins**
 
-## :D ![chucky](public/chucky.ico)
+## &colon;D
 
-![scungus](https://raw.githubusercontent.com/voidei/scungusclicker-archive/main/src/img/scungus.gif)
+![chucky](public/Chucky-2400.png)
 
 ---
 
 ### Development Dependencies&colon;
 
-#### Yarn Berry &dash; &commat; 3.3.0
+#### Yarn Berry &dash; &commat; 3&period;3&period;0
 
 - Packaged within the repo~
 - All plugins are also packaged within the repo~~
 
 #### Yarn Plugins&colon;
 
-##### Built-In&colon;
+##### Built&dash;In&colon;
 
 The following plugin dependencies will be included the Yarn 4 runtime by default.
 
@@ -65,16 +66,17 @@ The following plugin dependencies are not, and will not, be included in the Yarn
 #### Deployment &amp; Building &colon;
 
 - [Webpack](https://webpack.js.org)
-- [gp-pages npm module](https://github.com/tschaub/gh-pages)
+- [GitHub Pages - NPM Package](https://github.com/tschaub/gh-pages)
 
 #### TypeScript&colon;
 
-- [tsconfig](https://github.com/tsconfig/bases)
-- [typescript-styled-plugin](https://github.com/Microsoft/typescript-styled-plugin)
-- [ts-node](https://typestrong.org/)
 - [TypeScript](https://www.typescriptlang.org/)
   - [TypeScript - Docs](https://www.typescriptlang.org/docs/)
   - [TypeScript - tsconfig.json](https://www.typescriptlang.org/tsconfig)
+- [ts-node](https://typestrong.org/)
+- [tsconfig](https://github.com/tsconfig/bases)
+- [typescript-styled-plugin](https://github.com/Microsoft/typescript-styled-plugin)
+- [Typescript ESLint Language Service](https://github.com/Quramy/typescript-eslint-language-service)
 
 #### Linting&colon;
 
@@ -94,6 +96,29 @@ The following plugin dependencies are not, and will not, be included in the Yarn
 - [SVGR](https://github.com/gregberge/svgr)
 - [Babel](https://babeljs.io)
 - [CSpell](https://cspell.org/)
+
+### Reading&colon;
+
+#### React&comma; HTML&sol;CSS&comma; Other Web Design Components&colon;
+
+##### [Fluent UI](https://developer.microsoft.com/en-us/fluentui)
+
+- [Fluent UI - GitHub](https://github.com/microsoft/fluentui/)
+- [Fluent UI - Component Styling](https://github.com/microsoft/fluentui/wiki/Component-Styling)
+
+##### [Material UI](https://mui.com/)
+
+##### [Emotion](https://emotion.sh/docs/introduction)
+
+##### [Styled&dash;Components](https://styled-components.com/)
+
+- [VSCode Extension - Styled Components](https://github.com/styled-components/vscode-styled-components)
+
+#### Stuff that's not that relevent lmao
+
+- [Docusaurus](https://docusaurus.io/)
+- [NextJS](https://nextjs.org/)
+- [Renovate Bot](https://docs.renovatebot.com/)
 
 #### Notes&colon;
 
