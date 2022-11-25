@@ -11,7 +11,7 @@
 		{
 			"name": "📦  eslint-addon-dawnie (CORE)",
 			"path": "packages/eslint-addon-dawnie"
-		},
+		}
 	],
 	"settings": {
 		"typescript.tsdk": "✨  root\\node_modules\\typescript\\lib",
