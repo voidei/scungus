@@ -1,7 +1,4 @@
 {
-  "workspaces": [
-    "packages/*"
-  ],
   "dependencies": {
     "@babel/core": "^7.20.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.9",
