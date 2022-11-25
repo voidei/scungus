@@ -17,6 +17,8 @@
 
 ![scungus](https://raw.githubusercontent.com/voidei/scungusclicker-archive/main/src/img/scungus.gif)
 
+---
+
 ### Development Dependencies&colon;
 
 #### Yarn Berry &dash; &commat; 3.3.0
@@ -35,7 +37,7 @@ The following plugin dependencies will be included the Yarn 4 runtime by default
 - **[interactive tools](https://github.com/yarnpkg/berry/tree/master/packages/plugin-interactive-tools)**
 - **[stage](https://github.com/yarnpkg/berry/tree/master/packages/plugin-stage)**
 - **[typescript](https://github.com/yarnpkg/berry/tree/master/packages/plugin-typescript)**
-- **[verision](https://github.com/yarnpkg/berry/tree/master/packages/plugin-version)**
+- **[version](https://github.com/yarnpkg/berry/tree/master/packages/plugin-version)**
 - **[workspace tools](https://github.com/yarnpkg/berry/tree/master/packages/plugin-workspace-tools)**
 
 ##### External&colon;
@@ -55,6 +57,43 @@ The following plugin dependencies are not, and will not, be included in the Yarn
 - **[version tools](https://github.com/indooorsman/yarn-plugins/blob/main/packages/yarn-plugin-version-tools/readme.md)**
 - **[after install](https://github.com/mhassan1/yarn-plugin-after-install)**
 - **[build](https://yarn.build/)**
+
+---
+
+### Modules &amp; Externals&colon;
+
+#### Deployment &amp; Building &colon;
+
+- [Webpack](https://webpack.js.org)
+- [gp-pages npm module](https://github.com/tschaub/gh-pages)
+
+#### TypeScript&colon;
+
+- [tsconfig](https://github.com/tsconfig/bases)
+- [typescript-styled-plugin](https://github.com/Microsoft/typescript-styled-plugin)
+- [ts-node](https://typestrong.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+  - [TypeScript - Docs](https://www.typescriptlang.org/docs/)
+  - [TypeScript - tsconfig.json](https://www.typescriptlang.org/tsconfig)
+
+#### Linting&colon;
+
+- [ESLint](https://eslint.org/)
+- [ESLint Plugin - jsonc](https://github.com/ota-meshi/eslint-plugin-jsonc)
+- [ESLint Parser - jsonc](https://github.com/ota-meshi/jsonc-eslint-parser)
+- [TypeScript ESLint](https://typescript-eslint.io/)
+  - [TypeScript ESLint - Docs](https://typescript-eslint.io/docs/)
+- [tsconfig](https://github.com/tsconfig/bases)
+
+#### Other&colon;
+
+- [Create React App](https://create-react-app.dev/)
+- [Create React App built-in packages &amp; scripts](https://github.com/facebook/create-react-app/tree/main/packages)
+- [GitHub Docs](https://docs.github.com/en)
+  - [GitHub Docs - GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
+- [SVGR](https://github.com/gregberge/svgr)
+- [Babel](https://babeljs.io)
+- [CSpell](https://cspell.org/)
 
 #### Notes&colon;
 
