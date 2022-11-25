@@ -14,8 +14,8 @@ root = true
 [*]
 end_of_line = crlf
 charset = utf-8
-insert_final_newline = unset
-trim_trailing_whitespace = unset
+insert_final_newline = true
+trim_trailing_whitespace = true
 
 
 ; typescript, javascript, react, and json settings
@@ -23,8 +23,13 @@ trim_trailing_whitespace = unset
 indent_size = 2
 tab_width = 2
 indent_style = tab
-trim_trailing_whitespace = true
-insert_final_newline = true
+
+; .*rc files
+[*.*rc]
+indent_style = tab
+indent_size = 2
+tab_width = 2
+
 
 
 ; yml and markdown, note this one **needs** to be 2 spaces indent

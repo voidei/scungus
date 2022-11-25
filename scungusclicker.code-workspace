@@ -7,7 +7,11 @@
 		{
 			"name": "📦  babel-preset-dawnie (CORE)",
 			"path": "packages/babel-preset-dawnie"
-		}
+		},
+		{
+			"name": "📦  eslint-addon-dawnie (CORE)",
+			"path": "packages/eslint-addon-dawnie"
+		},
 	],
 	"settings": {
 		"typescript.tsdk": "✨  root\\node_modules\\typescript\\lib",
