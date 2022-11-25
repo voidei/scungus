@@ -96,9 +96,9 @@
 	},
 	"babel": {
 		"presets": [
-			"react",
-			"env",
-			"typescript"
+			"@babel/react",
+			"@babel/env",
+			"@babel/typescript"
 		]
 	}
 }

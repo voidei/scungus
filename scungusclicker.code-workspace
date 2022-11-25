@@ -14,6 +14,15 @@
 		}
 	],
 	"settings": {
+		"eslint.validate": [
+			"javascript",
+			"javascriptreact",
+			"json",
+			"jsonc",
+			"json5",
+			"typescript",
+			"typescriptreact"
+		],
 		"typescript.tsdk": "✨  root\\node_modules\\typescript\\lib",
 		"files.exclude": {
 			"node_modules": true,

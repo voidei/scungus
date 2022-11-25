@@ -41,6 +41,9 @@
 		"Catphics",
 		"fluentui",
 		"pmmmwh",
-		"svgr"
+		"svgr",
+		"icss",
+		"sockjs",
+		"tsdoc"
 	]
 }
