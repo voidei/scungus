@@ -5,6 +5,10 @@
 	"description": "Casual idle-clicker game where you collect Catphics Cards to mine CatCoins~!",
 	"main": "index.tsx",
 	"packageManager": "yarn@3.2.3",
+	"workspaces": [
+		"packages/*",
+		"types/*"
+	],
 	"scripts": {
 		"list": "yarn info --name-only",
 		"update": "yarn upgrade-interactive",
@@ -28,8 +32,17 @@
 		"types": "^0.1.1"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.20.2",
+		"@babel/parser": "^7.20.3",
+		"@babel/preset-env": "^7.20.2",
+		"@babel/preset-modules": "^0.1.5",
+		"@babel/preset-react": "^7.18.6",
+		"@babel/preset-typescript": "^7.18.6",
+		"@babel/types": "^7.20.2",
 		"@swc/cli": "^0.1.57",
 		"@swc/core": "^1.3.19",
+		"@types/babel__core": "^7.1.20",
+		"@types/babel__preset-env": "^7.9.2",
 		"@types/eslint": "^8.4.10",
 		"@types/eslint-config-prettier": "^6.11.0",
 		"@types/eslint-plugin-prettier": "^3.1.0",
@@ -62,6 +75,7 @@
 		"eslint-plugin-react": "^7.31.11",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-webpack-plugin": "^3.2.0",
+		"globals": "^13.18.0",
 		"hint": "^7.1.3",
 		"html-validate": "^7.10.0",
 		"html-webpack-plugin": "^5.5.0",
@@ -79,5 +93,12 @@
 		"webpack-cli": "^5.0.0",
 		"webpack-dev-server": "^4.11.1",
 		"webpack-sources": "^3.2.3"
+	},
+	"babel": {
+		"presets": [
+			"react",
+			"env",
+			"typescript"
+		]
 	}
 }
