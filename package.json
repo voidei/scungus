@@ -173,7 +173,6 @@
       "@babel/typescript"
     ]
   },
-  "packageManager": "yarn@3.3.0"
 	"name": "catcoin-miner",
 	"version": "0.1.0",
 	"homepage": "https://voidei.github.io/scungus",
