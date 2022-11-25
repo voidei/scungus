@@ -15,7 +15,7 @@
 			"node_modules": true,
 			"build": true,
 			".yarn": true,
-			"packages": true,
+			"packages": false,
 			"*.lock": true
 		},
 		"search.exclude": {

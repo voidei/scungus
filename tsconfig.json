@@ -23,7 +23,7 @@
 		// configs and rules
 		"strict": true,
 		"alwaysStrict": true,
-		"allowSyntheticDefaultImports": false,
+		//"allowSyntheticDefaultImports": false,
 		"forceConsistentCasingInFileNames": true,
 		"allowUmdGlobalAccess": false,
 		"allowUnreachableCode": false,
@@ -31,6 +31,12 @@
 		"isolatedModules": true,
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"exactOptionalPropertyTypes": true,
+		"noUnusedParameters": true,
+		"noUnusedLocals": true,
+		"importsNotUsedAsValues": "error",
 		//"noImplicitUseStrict": true,
 		// /\ `noImplicitUseStrict` isn't able to be used at
 		// the same time as `alwaysStrict` apparently
@@ -61,5 +67,5 @@
 	"buildOptions": {
 		"verbose": true,
 		"traceResolution": true
-	}
+	},
 }
