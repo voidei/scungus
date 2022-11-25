@@ -31,7 +31,9 @@
 		"isolatedModules": true,
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
-		"noImplicitUseStrict": true,
+		//"noImplicitUseStrict": true,
+		// /\ `noImplicitUseStrict` isn't able to be used at
+		// the same time as `alwaysStrict` apparently
 		"strictBindCallApply": true,
 		"strictPropertyInitialization": true,
 		"noFallthroughCasesInSwitch": true,
