@@ -1,3 +1,5 @@
+/* eslint-disable node/no-unpublished-require */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const process = require('process');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -34,7 +36,8 @@ module.exports = {
 		}),
 	],
 	devServer: {
-		//contentBase: path.join(__dirname, "dist"),
+		//contentBase: path.join(__dirname, 'dist'),
+		//static: path.join(__dirname, 'dist'),
 		port: process.env.PORT || 3000,
 		liveReload: true,
 	},
