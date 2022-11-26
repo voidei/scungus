@@ -53,6 +53,12 @@
 	},
 	"overrides": [
 		{
+			"files": ["*.cjs"],
+			"rules": {
+				"@typescript-eslint/no-var-requires": 0
+			}
+		},
+		{
 			"files": ["*.json"],
 			"parser": "jsonc-eslint-parser",
 			"parserOptions": {

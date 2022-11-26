@@ -21,7 +21,7 @@ jobs:
     steps:
     - name: Checkout branch
       id: checkout-branch
-      uses: actions/checkout@v2.5.0
+      uses: actions/checkout@v3
 
     - name: Setup Node.JS 19.x
       id: setup-node
