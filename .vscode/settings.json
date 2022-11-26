@@ -27,19 +27,14 @@
 	],
 	"files.exclude": {
 		"node_modules": true,
-		//"node_modules": false,
-		//"build": true,
 		"build": false,
 		".yarn": true,
-		//".yarn": false,
-		//"packages": true,
 		"packages": false,
 		"*.lock": true,
-		//"*.lock": false,
 		".idea": true,
-		//".idea": false,
-		//"types": true,
-		"types": false
+		"types": false,
+		"*ignore*": false,
+		".*version": true
 	},
 	"search.exclude": {
 		"**/node_modules": true,
@@ -53,5 +48,8 @@
 	},
 	"files.associations": {
 		"license": "plaintext"
+	},
+	"yaml.schemas": {
+		"https://json.schemastore.org/github-workflow.json": "file:///p%3A/GitHub/Repositories/scungusclicker/.github/workflows/deploy.yml"
 	}
 }

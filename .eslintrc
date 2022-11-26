@@ -38,6 +38,7 @@
 			"globalReturn": true
 		},
 		"sourceType": "module",
+		//"projectRoot": ".",
 		"project": "./tsconfig.json"
 	},
 	//"plugins": ["deprecation", "async-promise"],

@@ -56,5 +56,13 @@
 		"verbose": true,
 		"traceResolution": true
 	},
-	"include": ["src", "types", "scripts", "public", "packages/**/*", "config"]
+	"include": [
+		"src",
+		"types",
+		"scripts",
+		"public",
+		"packages/**/*",
+		"config",
+		"**/*.config.*"
+	]
 }

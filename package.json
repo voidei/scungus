@@ -18,7 +18,8 @@
 		"update": "yarn upgrade-interactive",
 		"build": "swc src -d build && webpack",
 		"start": "webpack-dev-server --open",
-		"publish": "yarn run build && node './scripts/pages/deploy.mjs'",
+		"deploy": "gh-pages -d dist",
+		"publish": "yarn run build && yarn run deploy",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "",
