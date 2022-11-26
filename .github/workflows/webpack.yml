@@ -17,23 +17,21 @@ jobs:
 
     steps:
     - name: Checkout branch
-      id: checkout
       uses: actions/checkout@v2.5.0
 
     - name: Setup Node.JS 19.x
       uses: actions/setup-node@v3.5.1
-      id: setup
       with:
         node-version: 19.x
 
     - name: Build
-      id: build
       run: |
         yarn install
         yarn run build
 
 
   deploy:
+   needs: build
    environment:
     name: github-pages
     url: ${{ steps.deployment.outputs.page_url }}
