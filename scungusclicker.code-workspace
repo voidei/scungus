@@ -5,15 +5,20 @@
 			"path": "."
 		},
 		{
-			"name": "📦  babel-preset-dawnie (CORE)",
+			"name": "📦  babel-preset-dawnie (OPT)",
 			"path": "packages/babel-preset-dawnie"
 		},
 		{
-			"name": "📦  eslint-addon-dawnie (CORE)",
+			"name": "📦  eslint-addon-dawnie (OPT)",
 			"path": "packages/eslint-addon-dawnie"
+		},
+		{
+			"name": "📦 types (CORE)",
+			"path": "types"
 		}
 	],
 	"settings": {
+		"typescript.tsdk": "✨  root\\node_modules\\typescript\\lib",
 		"eslint.validate": [
 			"javascript",
 			"javascriptreact",
@@ -23,14 +28,14 @@
 			"typescript",
 			"typescriptreact"
 		],
-		"typescript.tsdk": "✨  root\\node_modules\\typescript\\lib",
 		"files.exclude": {
 			"node_modules": true,
 			"build": true,
 			".yarn": true,
-			"packages": false,
+			"packages": true,
 			"*.lock": true,
 			".idea": true,
+			"types":true,
 		},
 		"search.exclude": {
 			"**/node_modules": true,
@@ -44,7 +49,7 @@
 		},
 		"files.associations": {
 			"license": "plaintext"
-		}
+		},
 	},
 	"extensions": {
 		"unwantedRecommendations": [],

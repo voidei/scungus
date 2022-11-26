@@ -1,29 +1,23 @@
 {
 	"compilerOptions": {
-		// base rules
 		"target": "ESNext",
-		"module": "ESNext",
-		"moduleResolution": "NodeNext",
+		"module": "ES6",
+		"moduleResolution": "Node",
 		"lib": ["DOM", "ESNext", "WebWorker", "ScriptHost"],
 		"declaration": true,
 		"resolveJsonModule": true,
 		"declarationMap": true,
-		//"composite": true,
 		"moduleDetection": "auto",
-		// js shit
 		"allowJs": true,
 		"checkJs": true,
 		"jsx": "react-jsx",
 		"emitDeclarationOnly": false,
-		// dirs and shit
 		"baseUrl": ".",
 		"declarationDir": "./types/",
 		"typeRoots": ["./node_modules/@types/", "./types/"],
 		"outDir": "./build/",
-		// configs and rules
 		"strict": true,
 		"alwaysStrict": true,
-		//"allowSyntheticDefaultImports": false,
 		"forceConsistentCasingInFileNames": true,
 		"allowUmdGlobalAccess": true,
 		"allowUnreachableCode": false,
@@ -32,14 +26,11 @@
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
 		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"exactOptionalPropertyTypes": true,
+		"skipLibCheck": false,
+		//"exactOptionalPropertyTypes": true,
 		"noUnusedParameters": true,
-		"noUnusedLocals": true,
+		"noUnusedLocals": false,
 		"importsNotUsedAsValues": "error",
-		//"noImplicitUseStrict": true,
-		// /\ `noImplicitUseStrict` isn't able to be used at
-		// the same time as `alwaysStrict` apparently
 		"strictBindCallApply": true,
 		"strictPropertyInitialization": true,
 		"noFallthroughCasesInSwitch": true,
@@ -47,10 +38,8 @@
 		"noImplicitOverride": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,
-		// formatting
 		"pretty": true,
 		"removeComments": false,
-		// additional settings
 		"diagnostics": false,
 		"extendedDiagnostics": false,
 		"disableSizeLimit": false,
@@ -67,5 +56,5 @@
 	"buildOptions": {
 		"verbose": true,
 		"traceResolution": true
-	},
+	}
 }
