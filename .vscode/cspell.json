@@ -40,10 +40,11 @@
 	"words": [
 		"Catphics",
 		"fluentui",
-		"pmmmwh",
-		"svgr",
 		"icss",
+		"pmmmwh",
 		"sockjs",
-		"tsdoc"
+		"svgr",
+		"tsdoc",
+		"voidei"
 	]
 }

@@ -1,3 +1,41 @@
 {
-  "typescript.tsdk": "./node_modules/typescript/lib"
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"json",
+		"jsonc",
+		"json5",
+		"typescript",
+		"typescriptreact"
+	],
+	"files.exclude": {
+		"node_modules": true,
+		//"node_modules": false,
+		//"build": true,
+		"build": false,
+		".yarn": true,
+		//".yarn": false,
+		//"packages": true,
+		"packages": false,
+		"*.lock": true,
+		//"*.lock": false,
+		".idea": true,
+		//".idea": false,
+		//"types": true,
+		"types": false
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true,
+		"build": true,
+		".yarn": true,
+		"packages": true,
+		"*.lock": true,
+		".idea": true
+	},
+	"files.associations": {
+		"license": "plaintext"
+	}
 }
