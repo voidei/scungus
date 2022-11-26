@@ -1,13 +1,29 @@
 {
 	"typescript.tsdk": "./node_modules/typescript/lib",
+	"material-icon-theme.files.associations": {
+		".markdownlint-cli2.jsonc": "settings",
+		".markdownlint-cli2.yaml": "settings",
+		".markdownlint-cli2.cjs": "settings",
+		".markdownlint-cli2.mjs": "settings",
+		".markdownlint.jsonc": "settings",
+		".markdownlint.json": "settings",
+		".markdownlint.yaml": "settings",
+		".markdownlint.yml": "settings",
+		".markdownlint.cjs": "settings",
+		".markdownlint.mjs": "settings"
+	},
 	"eslint.validate": [
 		"javascript",
 		"javascriptreact",
+		"typescript",
+		"typescriptreact",
 		"json",
 		"jsonc",
 		"json5",
-		"typescript",
-		"typescriptreact"
+		"yaml",
+		"yml",
+		"toml",
+		"markdown"
 	],
 	"files.exclude": {
 		"node_modules": true,
