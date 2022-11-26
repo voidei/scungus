@@ -9,13 +9,25 @@ permissions:
   id-token: write
 
 jobs:
+  build:
+    environment:
+      name: install dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm test
+
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.build-publish.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-     - id: build-publish
+     - id: publish
        uses: bitovi/github-actions-react-to-ghp@v1.2.0
        with:
         path: dist
