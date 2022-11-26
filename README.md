@@ -43,7 +43,8 @@ The following plugin dependencies will be included the Yarn 4 runtime by default
 
 ##### External&colon;
 
-The following plugin dependencies are not, and will not, be included in the Yarn 4 runtime by default[<sup>1</sup>](#1).
+The following plugin dependencies are not, and will not,
+be included in the Yarn 4 runtime by default[<sup>1</sup>](#1).
 
 - **[tsconfig references](https://github.com/Dcard/yarn-plugins/tree/master/packages/tsconfig-references)**
 - **[semver up](https://github.com/tophat/yarn-plugin-semver-up)**

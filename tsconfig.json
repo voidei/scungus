@@ -27,7 +27,6 @@
 		"strictFunctionTypes": true,
 		"esModuleInterop": true,
 		"skipLibCheck": false,
-		//"exactOptionalPropertyTypes": true,
 		"noUnusedParameters": true,
 		"noUnusedLocals": false,
 		"importsNotUsedAsValues": "error",
@@ -56,5 +55,6 @@
 	"buildOptions": {
 		"verbose": true,
 		"traceResolution": true
-	}
+	},
+	"include": ["src", "types", "scripts", "public", "packages/**/*", "config"]
 }

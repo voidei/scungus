@@ -3,6 +3,7 @@
 const process = require('process');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
@@ -34,10 +35,11 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: path.join(__dirname, 'public/index.html'),
 		}),
+		new ESLintPlugin(),
 	],
 	devServer: {
-		//contentBase: path.join(__dirname, 'dist'),
-		//static: path.join(__dirname, 'dist'),
+		// contentBase: path.join(__dirname, 'dist'),
+		// static: path.join(__dirname, 'dist'),
 		port: process.env.PORT || 3000,
 		liveReload: true,
 	},
