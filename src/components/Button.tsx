@@ -9,17 +9,17 @@ const pressButton = function () {
 
 export function Button() {
 	return (
-		<div className="btn">
+		<div className='btn'>
 			<material.Button
 				onClick={pressButton}
-				variant="outlined"
-				color="success"
-				size="large"
+				variant='outlined'
+				color='success'
+				size='large'
 			>
 				scungus:)
 			</material.Button>
 			<br />
-			<div className="text scungus">scungus = {scungus.toString()}</div>
+			<div className='text scungus'>scungus = {scungus.toString()}</div>
 		</div>
 	);
 }

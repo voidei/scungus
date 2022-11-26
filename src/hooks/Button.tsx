@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Scungus from '../components/Scungus';
 
 function Button() {
 	const [amount, setAmount] = useState(0);
@@ -10,25 +11,11 @@ function Button() {
 		<div>
 			<p>scungus = {amount}</p>
 			<br />
-			<button type="button" onClick={pressButton}>
-				hi
+			<button type='button' onClick={pressButton} aria-label='scungus:)'>
+				<Scungus />
 			</button>
 		</div>
 	);
 }
 
 export default Button;
-
-//function Example() {
-// declare a new state variable called scungus
-//	const [amount, setAmount] = useState(0);
-//
-//	return (
-//		<div>
-//			<p>You clicked {amount} times</p>
-//			<button type="button" onClick={pressButton}>
-//				hi
-//			</button>
-//		</div>
-//	);
-//}

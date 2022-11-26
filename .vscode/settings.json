@@ -27,13 +27,13 @@
 	],
 	"files.exclude": {
 		"node_modules": true,
-		"build": false,
+		"build": true,
 		".yarn": true,
-		"packages": false,
+		"packages": true,
 		"*.lock": true,
 		".idea": true,
-		"types": false,
-		"*ignore*": false,
+		"types": true,
+		"*ignore*": true,
 		".*version": true
 	},
 	"search.exclude": {

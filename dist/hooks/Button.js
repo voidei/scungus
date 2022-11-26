@@ -46,6 +46,7 @@ function _unsupportedIterableToArray(o, minLen) {
 }
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useState } from "react";
+import scungus from "../components/scungus";
 function Button() {
     var pressButton = function pressButton() {
         setAmount(amount + 1);
@@ -63,21 +64,9 @@ function Button() {
             /*#__PURE__*/ _jsx("button", {
                 type: "button",
                 onClick: pressButton,
-                children: "hi"
+                children: /*#__PURE__*/ _jsx("scungus", {})
             })
         ]
     });
 }
-export default Button; //function Example() {
- // declare a new state variable called scungus
- //	const [amount, setAmount] = useState(0);
- //
- //	return (
- //		<div>
- //			<p>You clicked {amount} times</p>
- //			<button type="button" onClick={pressButton}>
- //				hi
- //			</button>
- //		</div>
- //	);
- //}
+export default Button;
