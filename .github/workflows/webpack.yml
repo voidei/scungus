@@ -1,28 +1,52 @@
-name: NodeJS with Webpack
+name: Build and publish page
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "gh-pages" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "gh-pages" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [19.x, 18.x]
-
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout branch
+      id: checkout
+      uses: actions/checkout@v2.5.0
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    - name: Setup Node.JS 19.x
+      uses: actions/setup-node@v3.5.1
+      id: setup
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 19.x
 
     - name: Build
+      id: build
       run: |
         yarn install
-        npx webpack
+        yarn run build
+
+
+  deploy:
+   environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+   runs-on: ubuntu-latest
+   steps:
+    - name: Setup Pages
+      id: setup-pages
+      uses: actions/configure-pages@v2.1.3
+    - name: Upload Artifact
+      id: upload-artifact
+      uses: actions:/upload-pages-artifact@v1.0.5
+      with:
+       path: 'dist'
+    - name: Deploy to GH Pages
+      id: deploy
+      uses: actions/deploy-pages@v1.2.3
