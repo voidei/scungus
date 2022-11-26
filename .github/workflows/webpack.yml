@@ -42,7 +42,7 @@ jobs:
       uses: actions/configure-pages@v2.1.3
     - name: Upload Artifact
       id: upload-artifact
-      uses: actions:/upload-pages-artifact@v1.0.5
+      uses: actions/upload-pages-artifact@v1.0.5
       with:
        path: 'dist'
     - name: Deploy to GH Pages
