@@ -31,7 +31,12 @@ h1 {
   background-color: #313131;
 }
 
-.text.center.top {
+.text.center.top, .btn, .btn .scungus.text {
   text-align: center;
   color: #fff;
+}
+
+.scungus {
+  width: 512px;
+  height: 512px;
 }
