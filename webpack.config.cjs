@@ -1,5 +1,3 @@
-/* eslint-disable node/no-unpublished-require */
-/* eslint-disable @typescript-eslint/no-var-requires */
 const process = require('process');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');

@@ -4,5 +4,29 @@
 	"singleQuote": true,
 	"bracketSpacing": true,
 	"quoteProps": "consistent",
-	"jsxSingleQuote": true
+	"jsxSingleQuote": true,
+	"endOfLine": "crlf",
+	"requirePragma": false,
+	"overrides": [
+		{
+			"files": [
+				"*.ts",
+				"*.tsx"
+			],
+			"options": {
+				"parser": "typescript"
+			}
+		},
+		{
+			"files": [
+				"*.js",
+				"*.jsx",
+				"*.cjs",
+				"*.mjs"
+			],
+			"options": {
+				"parser": "babel"
+			}
+		}
+	]
 }

@@ -28,8 +28,8 @@
 		"plugin:yml/base",
 		"plugin:yml/standard",
 		"plugin:yml/prettier",
-		"plugin:toml/standard",
-		"plugin:json-schema-validator/recommended"
+		"plugin:toml/standard"
+		//"plugin:json-schema-validator/recommended"
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
@@ -45,6 +45,7 @@
 	"rules": {
 		"node/no-missing-import": "off",
 		"node/no-unpublished-import": "off",
+		"node/no-unpublished-require": "off",
 		"eqeqeq": 2,
 		"spaced-comment": "warn"
 		//"deprecation/deprecation": "error",
@@ -57,14 +58,6 @@
 			"rules": {
 				"@typescript-eslint/no-var-requires": 0
 			}
-		},
-		{
-			"files": ["*.json"],
-			"parser": "jsonc-eslint-parser",
-			"parserOptions": {
-				"jsonSyntax": "JSON"
-			},
-			"extends": ["plugin:jsonc/recommended-with-json", "plugin:jsonc/prettier"]
 		},
 		{
 			"files": ["*.jsonc", "tsconfig.json", ".*rc?(.json)"],
@@ -87,6 +80,14 @@
 				"plugin:jsonc/recommended-with-json5",
 				"plugin:jsonc/prettier"
 			]
+		},
+		{
+			"files": ["*.json"],
+			"parser": "jsonc-eslint-parser",
+			"parserOptions": {
+				"jsonSyntax": "JSON"
+			},
+			"extends": ["plugin:jsonc/recommended-with-json", "plugin:jsonc/prettier"]
 		},
 		{
 			"files": ["*.yaml", "*.yml"],

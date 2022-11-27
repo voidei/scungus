@@ -12,6 +12,9 @@
 		".markdownlint.cjs": "settings",
 		".markdownlint.mjs": "settings"
 	},
+	"material-icon-theme.folders.associations": {
+		"old": "archive"
+	},
 	"eslint.validate": [
 		"javascript",
 		"javascriptreact",
@@ -26,14 +29,15 @@
 		"markdown"
 	],
 	"files.exclude": {
+		"*.code-workspace": true,
 		"node_modules": true,
 		"build": true,
 		".yarn": true,
-		"packages": true,
+		"packages": false,
 		"*.lock": true,
 		".idea": true,
 		"types": true,
-		"*ignore*": true,
+		"*ignore*": false,
 		".*version": true
 	},
 	"search.exclude": {
@@ -42,7 +46,7 @@
 		"**/*.code-search": true,
 		"build": true,
 		".yarn": true,
-		"packages": true,
+		"packages": false,
 		"*.lock": true,
 		".idea": true
 	},

@@ -1,3 +1,13 @@
+### shit added by dawnie~
+.*rc
+*config.json*
+!.*rc.*js
+dist
+build
+*ignore
+extern
+
+
 ### VisualStudioCode template
 .vscode/*
 !.vscode/settings.json
