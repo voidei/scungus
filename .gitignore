@@ -35,3 +35,6 @@ extern
 .yarn/install-state.gz
 
 dist
+dist/main.js
+dist/hooks/Button.js
+dist/components/App.js
