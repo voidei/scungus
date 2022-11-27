@@ -2,7 +2,8 @@
 .*rc
 *config.json*
 !.*rc.*js
-dist/*
+**/dist/*
+**/dist/**/*
 build
 *ignore
 extern
