@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Scungus from '../components/Scungus';
+import * as material from '@mui/material';
 
 function Button() {
 	const [amount, setAmount] = useState(0);
@@ -11,9 +12,16 @@ function Button() {
 		<div>
 			<p>scungus = {amount}</p>
 			<br />
-			<button type='button' onClick={pressButton} aria-label='scungus:)'>
+			<material.Button
+				variant='contained'
+				color='secondary'
+				size='large'
+				type='submit'
+				onClick={pressButton}
+				aria-label='scungus:)'
+			>
 				<Scungus />
-			</button>
+			</material.Button>
 		</div>
 	);
 }

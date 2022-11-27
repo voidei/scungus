@@ -14,7 +14,7 @@ export function Button() {
 				onClick={pressButton}
 				variant='outlined'
 				color='success'
-				size='large'
+				size='medium'
 			>
 				scungus:)
 			</material.Button>
