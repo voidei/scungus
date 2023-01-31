@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 -->
 
-# ![scungus&colon;&rpar;](https://raw.githubusercontent.com/voidei/scungusclicker-archive/main/src/img/scungus.gif)
+# ![scungus:)](https://raw.githubusercontent.com/voidei/scungusclicker-archive/main/src/img/scungus.gif)
 
 ## the bad news&colon;
 
@@ -20,6 +20,7 @@
 
 ---
 
+<!--
 ### Development Dependencies&colon;
 
 #### Yarn Berry &dash; &commat; 3&period;3&period;0
@@ -69,3 +70,4 @@ be included in the Yarn 4 runtime by default[<sup>1</sup>](#1).
 ##### 1
 
 At the time of writing this.
+-->
