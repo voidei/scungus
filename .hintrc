@@ -1,15 +1,11 @@
 {
-    "extends": [
-        "development"
-    ],
-    "hints": {
+  "extends": ["development"],
+  "hints": {
     "compat-api/html": [
-    "default",
-        {
-            "ignore": [
-            "meta[name=theme-color]"
-        ]
-       }
+      "default",
+      {
+        "ignore": ["meta[name=theme-color]"]
+      }
     ]
   }
 }
