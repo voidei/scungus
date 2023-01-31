@@ -1,9 +1,9 @@
 /* sample styles */
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .chucky-container {
@@ -14,26 +14,28 @@
 
 @keyframes spin {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 h1 {
-  color: orangered;
+  color: rgb(255 69 0);
   text-align: center;
 }
 
 .root {
-  background-color: #313131;
+  background-color: rgb(49 49 49);
 }
 
-.text.center.top, .btn, .btn .scungus.text {
+.text.center.top,
+.btn,
+.btn .scungus.text {
+  color: rgb(255 255 255);
   text-align: center;
-  color: #fff;
 }
 
 .scungus {
