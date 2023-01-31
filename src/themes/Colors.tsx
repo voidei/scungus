@@ -1,13 +1,13 @@
-import { createTheme } from '@mui/material/styles';
 import * as colours from '@mui/material/colors';
+import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
-	palette: {
-		primary: {
-			main: colours.purple[600],
-			dark: colours.purple[900],
-		},
-	},
+  palette: {
+    primary: {
+      dark: colours.purple[900],
+      main: colours.purple[600],
+    },
+  },
 });
 
 export default theme;
