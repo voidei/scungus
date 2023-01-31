@@ -6,51 +6,52 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 
-root = true
+root = false
 ; so it knows to stop looking for other configs when it finds this one
 
+# everything is currently commented 'cause i'm working on this in my monorepo
 
 ; settings for all files and filetypes
-[*]
-end_of_line = crlf
-charset = utf-8
-insert_final_newline = true
-trim_trailing_whitespace = true
+#[*]
+#end_of_line = crlf
+#charset = utf-8
+#insert_final_newline = true
+#trim_trailing_whitespace = true
 
 
 ; typescript, javascript, react, and json settings
-[*.{ts,js,mjs,cjs,tsx,jsx}]
-indent_size = 4
-tab_width = 4
-indent_style = tab
-trim_trailing_whitespace = true
-insert_final_newline = true
+#[*.{ts,js,mjs,cjs,tsx,jsx}]
+#indent_size = 4
+#tab_width = 4
+#indent_style = tab
+#trim_trailing_whitespace = true
+#insert_final_newline = true
 
 
-[*.{json,jsonc,json5}]
-indent_style = space
-indent_size = 2
-tab_width = 2
-indent_style = tab
+#[*.{json,jsonc,json5}]
+#indent_style = space
+#indent_size = 2
+#tab_width = 2
+#indent_style = tab
 
 
 ; .*rc files
-[*.*rc]
-indent_style = tab
-indent_size = 2
-tab_width = 2
+#[*.*rc]
+#indent_style = tab
+#indent_size = 2
+#tab_width = 2
 
 
 
 ; yml - note this one **needs** to be 2 spaces indent
-[*.{yml,yaml}]
-indent_style = space
-indent_size = 2
+#[*.{yml,yaml}]
+#indent_style = space
+#indent_size = 2
 
 
 ; markdown
-[*.md]
-indent_style = space
-indent_size = 2
-tab_width = 2
-max_line_length = 120
+#[*.md]
+#indent_style = space
+#indent_size = 2
+#tab_width = 2
+#max_line_length = 120
