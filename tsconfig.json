@@ -1,68 +1,72 @@
 {
-	"compilerOptions": {
-		"target": "ESNext",
-		"module": "ES6",
-		"moduleResolution": "Node",
-		"lib": ["DOM", "ESNext", "WebWorker", "ScriptHost"],
-		"declaration": true,
-		"resolveJsonModule": true,
-		"declarationMap": true,
-		"moduleDetection": "auto",
-		"allowJs": true,
-		"checkJs": true,
-		"jsx": "react-jsx",
-		"emitDeclarationOnly": false,
-		"baseUrl": ".",
-		"declarationDir": "./types/",
-		"typeRoots": ["./node_modules/@types/", "./types/"],
-		"outDir": "./build/",
-		"strict": true,
-		"alwaysStrict": true,
-		"forceConsistentCasingInFileNames": true,
-		"allowUmdGlobalAccess": true,
-		"allowUnreachableCode": false,
-		"allowUnusedLabels": true,
-		"isolatedModules": false,
-		"strictNullChecks": true,
-		"strictFunctionTypes": true,
-		"esModuleInterop": true,
-		"skipLibCheck": false,
-		"noUnusedParameters": false,
-		"noUnusedLocals": false,
-		"importsNotUsedAsValues": "error",
-		"strictBindCallApply": true,
-		"strictPropertyInitialization": true,
-		"noFallthroughCasesInSwitch": true,
-		"noImplicitAny": true,
-		"noImplicitOverride": true,
-		"noImplicitReturns": true,
-		"noImplicitThis": true,
-		"pretty": true,
-		"removeComments": false,
-		"diagnostics": false,
-		"extendedDiagnostics": false,
-		"disableSizeLimit": false,
-		"plugins": [
-			{
-				"name": "typescript-eslint-language-service"
-			},
-			{
-				"name": "typescript-styled-plugin"
-			}
-		]
-	},
-	"compileOnSave": false,
-	"buildOptions": {
-		"verbose": true,
-		"traceResolution": true
-	},
-	"include": [
-		"src",
-		"types",
-		"scripts",
-		"public",
-		"packages/**/*",
-		"config",
-		"**/*.config.*"
-	]
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "lib": [
+      "DOM",
+      "ESNext",
+      "WebWorker",
+      "ScriptHost"
+    ],
+    "declaration": true,
+    "resolveJsonModule": true,
+    "declarationMap": true,
+    "moduleDetection": "auto",
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "react-jsx",
+    "emitDeclarationOnly": false,
+    "baseUrl": ".",
+    "declarationDir": "./types/",
+    "typeRoots": [
+      "./node_modules/@types/",
+      "./types/"
+    ],
+    "outDir": "./build/",
+    "strict": true,
+    "alwaysStrict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowUmdGlobalAccess": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": true,
+    "isolatedModules": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "importsNotUsedAsValues": "error",
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "pretty": true,
+    "removeComments": false,
+    "diagnostics": false,
+    "extendedDiagnostics": false,
+    "disableSizeLimit": false,
+    "plugins": [
+      {
+        "name": "typescript-eslint-language-service"
+      },
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ]
+  },
+  "compileOnSave": false,
+  "buildOptions": {
+    "verbose": true,
+    "traceResolution": true
+  },
+  "include": [
+    "**/*",
+    "./.eslintrc.cjs",
+    "./.prettierrc.cjs"
+  ]
 }

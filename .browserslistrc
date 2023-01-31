@@ -1,0 +1,19 @@
+defaults
+supports css-grid and supports es6-module
+>= 0.5% and not dead and not op_mini all
+edge >= 80
+#node >= 16
+
+#[production]
+#>= 0.5% and not dead
+#last 5 versions
+#defaults and not op_mini all
+#defaults and supports css-grid
+
+#[modern]
+#last 2 major version and not dead
+#not op_mini all
+
+#[ssr]
+#defaults and supports es6-module
+#node >= 16 and supports es6-module
