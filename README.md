@@ -8,9 +8,17 @@
 
 ## &colon;&lpar;
 
+## &dot;&dot;&dot;
+
+## SIKE SCUNGUS NEVER GONE
+
+<!--
 ## the good news&excl;
 
 ### chucky is here as a substitute
+-->
+
+## We even got chucky too~&excl;
 
 ### he even **spins**
 
