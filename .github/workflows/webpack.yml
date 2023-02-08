@@ -1,10 +1,10 @@
 name: Build and publish page
 
 on:
-  # push:
-  #  branches: [ "main", "gh-pages" ]
-  # pull_request:
-  #  branches: [ "main", "gh-pages" ]
+  push:
+    branches: [main, gh-pages]
+  pull_request:
+    branches: [main, gh-pages]
   workflow_dispatch:
 
 permissions:
