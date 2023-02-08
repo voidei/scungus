@@ -2,6 +2,10 @@
 const path = require('node:path');
 const baseConf = '../../.eslintrc.cjs';
 module.exports = {
+  env: {
+    browser: true,
+    node: true,
+  },
   extends: [baseConf],
   overrides: [
     {
@@ -30,7 +34,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
-    tsconfigRootDir: __dirname,
+    tsconfigRootDir: '.',
   },
   rules: {
     'filenames/no-index': 'off',
@@ -41,15 +45,22 @@ module.exports = {
     'unicorn/prefer-node-protocol': 'off',
   },
   settings: {
+    'import/resolver': {
+      node: true,
+      typescript: {
+        project: './tsconfig.json',
+      },
+    },
     node: {
       allowModules: [],
+      paths: [
+        path.join(__dirname, '../../node_modules'),
+        '.',
+      ],
       resolvePaths: [
         __dirname,
-        path.join(__dirname, './src'),
-        '../../node_modules',
-        './src',
-        './src/*',
-        './src/**/*',
+        path.resolve(__dirname),
+        '.',
       ],
     },
   },

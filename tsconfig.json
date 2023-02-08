@@ -51,13 +51,8 @@
     "extendedDiagnostics": false,
     "disableSizeLimit": false,
     "plugins": [
-      {
-        "name": "typescript-eslint-language-service"
-      },
-      {
-        "name": "typescript-styled-plugin"
-      }
-    ]
+      { "name": "typescript-eslint-language-service" },
+      { "name": "typescript-styled-plugin" }]
   },
   "compileOnSave": false,
   "buildOptions": {

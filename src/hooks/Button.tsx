@@ -1,29 +1,34 @@
-import { useState } from 'react';
-import Scungus from '../components/Scungus';
 import * as material from '@mui/material';
+import { useState } from 'react';
 
+import Scungus from '../components/Scungus';
+
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 function Button() {
-	const [amount, setAmount] = useState(0);
-	function pressButton() {
-		setAmount(amount + 1);
-	}
+  const [
+    amount,
+    setAmount,
+  ] = useState(0);
+  // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
+  function pressButton() {
+    setAmount(amount + 1);
+  }
 
-	return (
-		<div>
-			<p>scungus = {amount}</p>
-			<br />
-			<material.Button
-				variant='contained'
-				color='secondary'
-				size='large'
-				type='submit'
-				onClick={pressButton}
-				aria-label='scungus:)'
-			>
-				<Scungus />
-			</material.Button>
-		</div>
-	);
+  return (
+    <div>
+      <p>scungus = {amount}</p>
+      <br />
+      <material.Button
+        variant='contained'
+        color='secondary'
+        size='large'
+        type='submit'
+        onClick={pressButton}
+        aria-label='scungus:)'>
+        <Scungus />
+      </material.Button>
+    </div>
+  );
 }
 
 export default Button;
