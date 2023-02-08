@@ -2,9 +2,9 @@ name: Build and publish page
 
 on:
   # push:
-  # branches: [ "main", "gh-pages" ]
+  #  branches: [ "main", "gh-pages" ]
   # pull_request:
-  # branches: [ "main", "gh-pages" ]
+  #  branches: [ "main", "gh-pages" ]
   workflow_dispatch:
 
 permissions:
@@ -33,8 +33,7 @@ jobs:
       - name: Build
         id: build
         run: |
-          yarn install
-          yarn run build
+          yarn install && yarn run build
 
       - name: Setup Pages
         id: setup-pages
@@ -44,7 +43,7 @@ jobs:
         id: upload-artifact
         uses: actions/upload-pages-artifact@v1.0.5
         with:
-          path: 'dist'
+          path: dist
 
       - name: Deploy to GH Pages
         id: deploy
