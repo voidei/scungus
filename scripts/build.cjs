@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-vars */
 const fs = require('fs-extra');
 const path = require('path');
 
@@ -9,11 +10,13 @@ const txt = '.txt';
 let fileTypes = [svg && ico && png && txt];
 
 /**
- * @param {fs.PathLike} src
- * @param {fs.PathLike} dest
+ * @description Move files.
+ *
+ * @param {fs.PathLike} src - File source.
+ * @param {fs.PathLike} dest File destination.
  */
 function move(src, dest) {
-	src = path.join(__dirname, 'public');
-	dest = path.join(__dirname, 'dist');
-	fs.copyFileSync(src, dest);
+  src = path.join(__dirname, 'public');
+  dest = path.join(__dirname, 'dist');
+  fs.copyFileSync(src, dest);
 }

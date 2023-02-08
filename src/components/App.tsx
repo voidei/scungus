@@ -1,6 +1,6 @@
 import Button from '../hooks/Button';
 import './app.css';
-import { Chucky, ChuckyConst } from './Chucky';
+import { Chucky } from './Chucky';
 import { dog } from './test';
 
 const App = () => {

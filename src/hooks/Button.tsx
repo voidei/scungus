@@ -3,16 +3,14 @@ import { useState } from 'react';
 
 import Scungus from '../components/Scungus';
 
-// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
-function Button() {
+const Button = () => {
   const [
     amount,
     setAmount,
   ] = useState(0);
-  // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
-  function pressButton() {
+  const pressButton = () => {
     setAmount(amount + 1);
-  }
+  };
 
   return (
     <div>
@@ -29,6 +27,6 @@ function Button() {
       </material.Button>
     </div>
   );
-}
+};
 
 export default Button;

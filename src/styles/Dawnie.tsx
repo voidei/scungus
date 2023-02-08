@@ -1,3 +1,5 @@
+/* eslint-disable no-lone-blocks, @typescript-eslint/no-unused-vars, unused-imports/no-unused-vars */
+
 declare module '@mui/materials/styles';
 {
   interface Theme {
@@ -7,9 +9,11 @@ declare module '@mui/materials/styles';
   }
 
   interface Palette {
+    // @ts-ignore
     readonly neutral: Palette['primary'];
   }
   interface PaletteOptions {
+    // @ts-ignore
     readonly neutral: PaletteOptions['primary'];
   }
 
