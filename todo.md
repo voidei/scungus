@@ -4,6 +4,10 @@ title: todo
 
 ## todo
 
+ok so I gotta add some shit into this lmao, but need to change local storage for only saving and loading to/from
+
+use session storage for while we're in the current tab and loaded
+
 ```markdown
 ### shit that's not directly related to scungus&colon;
 ```

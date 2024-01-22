@@ -41,10 +41,10 @@ jobs:
 
       - name: Upload Artifact
         id: upload-artifact
-        uses: actions/upload-pages-artifact@v1.0.5
+        uses: actions/upload-pages-artifact@latest
         with:
           path: dist
 
       - name: Deploy to GH Pages
         id: deploy
-        uses: actions/deploy-pages@v1.2.3
+        uses: actions/deploy-pages@latest
