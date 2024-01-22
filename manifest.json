@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"version": "0.1.0",
+	"name": "CatCoin Miner - Idle Game",
+	"short_name": "CatCoinMiner",
+	"lang": "en",
+	"description": "Casual idle-clicker game where you collect Catphics Cards to mine CatCoins~!",
+	"icons": [
+		{
+			"sizes": "24x32",
+			"src": "./chucky.ico",
+			"type": "image/ico"
+		},
+		{
+			"sizes": "2400x2400",
+			"src": "./Chucky-2400.png",
+			"type": "image/png"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#e1e1e1"
+}

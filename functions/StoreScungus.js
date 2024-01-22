@@ -6,6 +6,13 @@ function _arrayLikeToArray(arr, len) {
 function _arrayWithHoles(arr) {
     if (Array.isArray(arr)) return arr;
 }
+function _instanceof(left, right) {
+    if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) {
+        return !!right[Symbol.hasInstance](left);
+    } else {
+        return left instanceof right;
+    }
+}
 function _iterableToArrayLimit(arr, i) {
     var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
     if (_i == null) return;
@@ -44,40 +51,40 @@ function _unsupportedIterableToArray(o, minLen) {
     if (n === "Map" || n === "Set") return Array.from(n);
     if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
 }
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useState } from "react";
-function Button() {
-    var pressButton = function pressButton() {
-        setAmount(amount + 1);
+function storeScungusLocally(key, initialValue) {
+    // State to store value
+    // pass initial state function to useState so logic is only executed once
+    var _useState = _slicedToArray(useState(function() {
+        try {
+            // get from local storage by key
+            var item = window.localStorage.getItem(key);
+            // parse stored json or if none return init val
+            return item ? JSON.parse(item) : initialValue;
+        } catch (error) {
+            // if error, also return init value
+            console.log(error);
+            return initialValue;
+        }
+    }), 2), storedValue = _useState[0], setStoredValue = _useState[1];
+    // Return a wrapped version of useState's setter function that ...
+    // ... persists the new value to localStorage.
+    var setValue = function(value) {
+        try {
+            // allow value to be a function so we have the same api as useState
+            var valueToStore = _instanceof(value, Function) ? value(storedValue) : value;
+            // save state
+            setStoredValue(valueToStore);
+            // save to local storage
+            window.localStorage.setItem(key, JSON.stringify(valueToStore));
+        } catch (error) {
+            // a more advanced implementation would handle the error
+            console.log(error);
+        }
     };
-    var _useState = _slicedToArray(useState(0), 2), amount = _useState[0], setAmount = _useState[1];
-    return /*#__PURE__*/ _jsxs("div", {
-        children: [
-            /*#__PURE__*/ _jsxs("p", {
-                children: [
-                    "scungus = ",
-                    amount
-                ]
-            }),
-            /*#__PURE__*/ _jsx("br", {}),
-            /*#__PURE__*/ _jsx("button", {
-                type: "button",
-                onClick: pressButton,
-                children: "hi"
-            })
-        ]
-    });
+    return [
+        storedValue,
+        setValue
+    ];
 }
-export default Button; //function Example() {
- // declare a new state variable called scungus
- //	const [amount, setAmount] = useState(0);
- //
- //	return (
- //		<div>
- //			<p>You clicked {amount} times</p>
- //			<button type="button" onClick={pressButton}>
- //				hi
- //			</button>
- //		</div>
- //	);
- //}
+export { storeScungusLocally };
