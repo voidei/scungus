@@ -1,26 +1,30 @@
-import Button from '../hooks/Button';
+//import { LoadScungus, SaveScungus } from 'src/hooks/StoreScungus';
+import LoadScungus from '../hooks/LoadScungus';
+import ResetScungus from '../hooks/ResetScungus';
+import ClickScungus from '../hooks/ScungusButton';
 import './app.css';
-import { Chucky } from './Chucky';
-import { dog } from './test';
 
 const App = () => {
-  dog();
-
   return (
-    <div className='root'>
-      <h1>this is chucky</h1>
-      <div className='text center top'>chucky can spin</div>
-      <Chucky />
-      <br />
-      <h1>and this is scungus:)</h1>
+    <div className='root' style={{display: 'flex', width: '100%'}}>
+      <div className='side left'>
+      <div className='title-text heading'><h1>this is scungus:)</h1></div>
       <div className='text center top'>
         you can click on scungus:)
         <br />
         doing so will increase your scungus:)
         <br />
         try it~!
+      </div>
+      <div className='button scungus padding'>
+        <ClickScungus />
+      </div>
+      </div>
+      <div className='side right'>
         <br />
-        <Button />
+        <LoadScungus />
+        <br />
+        <ResetScungus />
       </div>
     </div>
   );
