@@ -2,8 +2,10 @@ import { Button } from '@mui/material';
 
 const ResetScungus = () => {
   const reset = () => {
+    console.log(`resetting scungus:) progress`);
     localStorage.removeItem('scungus');
     sessionStorage.removeItem('scungus');
+    location.reload();
   };
 
   return (
