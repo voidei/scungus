@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.4
+
+```diff
++ save button
+* buttons do nothing
+- removed number of scungus stored between session for now until I can get the save/load/reset working
+```
+
 ## 0.0.3
 
 ```diff
