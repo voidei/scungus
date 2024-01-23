@@ -1,11 +1,11 @@
 import { Button } from '@mui/material';
-import { storeScungusLocally } from '../functions/StoreScungus';
+import { useState } from 'react';
 
 const ClickScungus = () => {
   const [
     amount,
     setAmount,
-  ] = storeScungusLocally('scungus', 0);
+  ] = useState(0);
   const pressButton = () => {
     setAmount(amount + 1);
   };
