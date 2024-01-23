@@ -2,27 +2,24 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
+    "json",
+    "json5",
+    "jsonc",
+    "markdown",
+    "toml",
     "typescript",
     "typescriptreact",
-    "json",
-    "jsonc",
-    "json5",
     "yaml",
-    "yml",
-    "toml",
-    "markdown",
+    "yml"
   ],
   "files.exclude": {
-    "*.code-workspace": true,
     "*.lock": true,
     "*ignore*": false,
     ".*version": true,
-    ".idea": true,
-    ".yarn": false,
+    ".yarn": true,
     "build": true,
-    "node_modules": true,
-    "packages": false,
-    "types": true,
+    "dist": true,
+    "node_modules": true
   },
   "search.exclude": {
     "**/*.code-search": true,
@@ -32,6 +29,6 @@
     ".idea": true,
     ".yarn": true,
     "build": true,
-    "packages": false,
-  },
+    "dist": true
+  }
 }
