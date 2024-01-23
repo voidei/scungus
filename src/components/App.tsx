@@ -1,14 +1,16 @@
-//import { LoadScungus, SaveScungus } from 'src/hooks/StoreScungus';
+import ClickScungus from '../hooks/ClickScungus';
 import LoadScungus from '../hooks/LoadScungus';
 import ResetScungus from '../hooks/ResetScungus';
-import ClickScungus from '../hooks/ScungusButton';
+import SaveScungus from '../hooks/SaveScungus';
 import './app.css';
 
 const App = () => {
   return (
     <div className='root' style={{display: 'flex', width: '100%'}}>
       <div className='side left'>
-      <div className='title-text heading'><h1>this is scungus:)</h1></div>
+      <div className='title-text heading'>
+        <h1>this is scungus:)</h1>
+      </div>
       <div className='text center top'>
         you can click on scungus:)
         <br />
@@ -22,9 +24,12 @@ const App = () => {
       </div>
       <div className='side right'>
         <br />
+        <SaveScungus />
+        <br />
         <LoadScungus />
         <br />
         <ResetScungus />
+        <br />
       </div>
     </div>
   );
