@@ -35,5 +35,14 @@ function storeScungusLocally(key: string, initialValue: Number) {
   return [storedValue, setValue]
 }
 
-export { storeScungusLocally };
+
+function storeScungusSession(key: string, value: Number) {
+  const oldValue = window.sessionStorage.getItem(key);
+  window.sessionStorage.setItem(key, `${value}`);
+  console.log(
+    `set value ${key} to ${value}\nprevious value: ${oldValue}`
+  )
+};
+
+export { storeScungusLocally, storeScungusSession };
 
