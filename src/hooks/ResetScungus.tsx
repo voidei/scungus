@@ -1,9 +1,10 @@
 import { Button } from '@mui/material';
-import { storeScungusLocally } from '../functions/StoreScungus';
 
 const ResetScungus = () => {
-  const [setAmount] = storeScungusLocally('scungus', 0);
-  const reset = () => setAmount(0);
+  const reset = () => {
+    localStorage.removeItem('scungus');
+    sessionStorage.removeItem('scungus');
+  };
 
   return (
     <div>

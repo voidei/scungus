@@ -6,7 +6,10 @@ const SaveScungus = () => {
     amount,
     setAmount
   ] = storeScungusLocally('scungus', 0);
-  const save = () => setAmount(amount);
+  const save = () => {
+    console.log(`saving scungus value of ${amount} to local storage`)
+    setAmount(amount)
+  };
 
   return (
     <div>

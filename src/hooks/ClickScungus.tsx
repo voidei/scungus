@@ -1,13 +1,15 @@
 import { Button } from '@mui/material';
-import { useState } from 'react';
+import { storeScungusSession } from '../functions/StoreScungus';
 
 const ClickScungus = () => {
   const [
     amount,
     setAmount,
-  ] = useState(0);
+  ] = storeScungusSession('scungus', 0);
   const pressButton = () => {
+    console.log(`scungus + 1`)
     setAmount(amount + 1);
+    console.log(`new scungus == ${amount}`)
   };
 
   return (
