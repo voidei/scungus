@@ -64,10 +64,6 @@
   padding: 10%;
 }
 
-.button.load {
-  height: 50px;
-}
-
 .side.left {
   float: left;
   flex: 50%;
