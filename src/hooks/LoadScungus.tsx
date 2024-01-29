@@ -1,12 +1,10 @@
 import { Button } from '@mui/material';
-import { storeScungusLocally } from '../functions/StoreScungus';
 
 const LoadScungus = () => {
-  const [
-    amount,
-    setAmount
-  ] = storeScungusLocally('scungus', 0);
-  const load = () => setAmount(amount);
+  const load = () => {
+    console.log(`loading scungus now`);
+    window.localStorage.getItem('scungus')
+  };
 
   return (
     <div>

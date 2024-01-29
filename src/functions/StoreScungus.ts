@@ -35,6 +35,17 @@ function storeScungusLocally(key: string, initialValue: Number) {
   return [storedValue, setValue]
 }
 
+function loadScungusLocally(key: string) {
+  const [storedValue] = useState(() => {
+    try {
+      const item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : console.log(`error?`)
+    } catch (error) {
+      console.log(error)
+    }
+  })
+}
+
 
 function storeScungusSession(key: string, value: Number) {
   // State to store value
