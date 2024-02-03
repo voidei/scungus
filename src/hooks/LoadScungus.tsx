@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Button } from 'semantic-ui-react';
 
 const LoadScungus = () => {
   const load = () => {
@@ -11,7 +11,6 @@ const LoadScungus = () => {
       <div>
         <Button
         variant='contained'
-        color='secondary'
         type='submit'
         onClick={load}
         aria-label='scungus:) load'

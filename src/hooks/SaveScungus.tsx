@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Button } from 'semantic-ui-react';
 import { storeScungusLocally } from '../functions/StoreScungus';
 
 const SaveScungus = () => {
@@ -16,7 +16,6 @@ const SaveScungus = () => {
       <div>
         <Button
         variant='contained'
-        color='secondary'
         type='submit'
         onClick={save}
         aria-label='scungus:) save'

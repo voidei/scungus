@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function storeScungusLocally(key: string, initialValue: Number) {
+function storeScungusLocally(key: string, initialValue: number) {
   // State to store value
   // pass initial state function to useState so logic is only executed once
   const [storedValue, setStoredValue] = useState(() => {
@@ -19,7 +19,7 @@ function storeScungusLocally(key: string, initialValue: Number) {
 
   // Return a wrapped version of useState's setter function that ...
   // ... persists the new value to localStorage.
-  const setValue = (value: Number) => {
+  const setValue = (value: number) => {
     try {
       // allow value to be a function so we have the same api as useState
       const valueToStore = value instanceof Function ? value(storedValue) : value;
@@ -47,7 +47,7 @@ function loadScungusLocally(key: string) {
 }
 
 
-function storeScungusSession(key: string, value: Number) {
+function storeScungusSession(key: string, value: number) {
   // State to store value
   // pass initial state function to useState so logic is only executed once
   const [storedValue, setStoredValue] = useState(() => {
@@ -66,7 +66,7 @@ function storeScungusSession(key: string, value: Number) {
 
   // Return a wrapped version of useState's setter function that ...
   // ... persists the new value to localStorage.
-  const setValue = (value: Number) => {
+  const setValue = (value: number) => {
     try {
       // allow value to be a function so we have the same api as useState
       const valueToStore = value instanceof Function ? value(storedValue) : value;
@@ -80,7 +80,7 @@ function storeScungusSession(key: string, value: Number) {
     }
   };
   return [storedValue, setValue]
-};
+}
 
 export { storeScungusLocally, storeScungusSession };
 

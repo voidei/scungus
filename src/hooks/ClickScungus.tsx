@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Button } from 'semantic-ui-react';
 import { storeScungusSession } from '../functions/StoreScungus';
 
 const ClickScungus = () => {
@@ -25,7 +25,6 @@ const ClickScungus = () => {
 
       <Button
         variant='contained'
-        color='secondary'
         size='large'
         type='submit'
         onClick={pressButton}

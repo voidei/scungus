@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Button } from 'semantic-ui-react';
 
 const ResetScungus = () => {
   const reset = () => {
@@ -13,7 +13,6 @@ const ResetScungus = () => {
       <div>
         <Button
         variant='contained'
-        color='secondary'
         type='submit'
         onClick={reset}
         aria-label='scungus:) reset'
