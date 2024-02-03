@@ -21,6 +21,8 @@ extern
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+*yarn.lock
+
 ### VisualStudioCode template
 .vscode/*
 !.vscode/settings.json
