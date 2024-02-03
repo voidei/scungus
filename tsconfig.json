@@ -1,71 +1,33 @@
 {
   "compilerOptions": {
-    "module": "ES6",
-    "moduleResolution": "Node",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
     "lib": [
       "DOM",
-      "ESNext",
-      "ScriptHost",
-      "WebWorker"
+      "DOM.Iterable",
+      "ES2020"
     ],
-    "moduleDetection": "auto",
-    "target": "ES2022",
-    "declaration": true,
+    "module": "ESNext",
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
-    "declarationMap": true,
-    "allowJs": true,
-    "checkJs": true,
-    "typeRoots": [
-      "./node_modules/@types/",
-      "./types/"
-    ],
-    "declarationDir": "./types/",
+    "isolatedModules": true,
+    "noEmit": true,
     "jsx": "react-jsx",
-    "emitDeclarationOnly": false,
-    "baseUrl": ".",
-    "outDir": "./build/",
+    /* Linting */
     "strict": true,
-    "alwaysStrict": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowUmdGlobalAccess": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": true,
-    "isolatedModules": false,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "esModuleInterop": true,
-    "skipLibCheck": false,
-    "noUnusedParameters": false,
-    "noUnusedLocals": false,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "pretty": true,
-    "removeComments": false,
-    "diagnostics": false,
-    "extendedDiagnostics": false,
-    "disableSizeLimit": false,
-    "plugins": [
-      {
-        "name": "typescript-eslint-language-service"
-      },
-      {
-        "name": "typescript-styled-plugin"
-      }
-    ]
-  },
-  "compileOnSave": false,
-  "buildOptions": {
-    "verbose": true,
-    "traceResolution": true
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "**/*",
-    "./.eslintrc.cjs",
-    "./.prettierrc.cjs"
+    "src"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
   ]
 }
