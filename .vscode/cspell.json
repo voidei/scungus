@@ -31,12 +31,8 @@
   "ignoreRegExpList": [],
   "language": "en",
   "languageId": "en-US",
-  "pnpFiles": [
-    ".pnp.js",
-    ".pnp.cjs"
-  ],
   "useGitignore": true,
-  "usePnP": true,
+  "usePnP": false,
   "words": [
     "bitovi",
     "Catphics",
