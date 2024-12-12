@@ -1,9 +1,8 @@
-import { createRoot } from 'react-dom/client';
+import { createRoot } from "react-dom/client";
 
-import App from './components/App';
+import App from "./components/App";
 
-const container = document.querySelector('#root');
-// eslint-disable-next-line functional/no-conditional-statements
+const container = document.querySelector("#root");
 if (container) {
   const root = createRoot(container);
   root.render(<App />);

@@ -11,18 +11,18 @@ function storeScungusLocally(key: string, initialValue: Number) {
       return item ? JSON.parse(item) : initialValue;
     } catch (error) {
       // if error, also return init value
-      console.log(error)
+      console.log(error);
       return initialValue;
     }
   });
-
 
   // Return a wrapped version of useState's setter function that ...
   // ... persists the new value to localStorage.
   const setValue = (value: Number) => {
     try {
       // allow value to be a function so we have the same api as useState
-      const valueToStore = value instanceof Function ? value(storedValue) : value;
+      const valueToStore =
+        value instanceof Function ? value(storedValue) : value;
       // save state
       setStoredValue(valueToStore);
       // save to local storage
@@ -32,20 +32,19 @@ function storeScungusLocally(key: string, initialValue: Number) {
       console.log(error);
     }
   };
-  return [storedValue, setValue]
+  return [storedValue, setValue];
 }
 
 function loadScungusLocally(key: string) {
   const [storedValue] = useState(() => {
     try {
       const item = window.localStorage.getItem(key);
-      return item ? JSON.parse(item) : console.log(`error?`)
+      return item ? JSON.parse(item) : console.log(`error?`);
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-  })
+  });
 }
-
 
 function storeScungusSession(key: string, value: Number) {
   // State to store value
@@ -58,18 +57,18 @@ function storeScungusSession(key: string, value: Number) {
       return item ? JSON.parse(item) : value;
     } catch (error) {
       // if error, also return init value
-      console.log(error)
+      console.log(error);
       return value;
     }
   });
-
 
   // Return a wrapped version of useState's setter function that ...
   // ... persists the new value to localStorage.
   const setValue = (value: Number) => {
     try {
       // allow value to be a function so we have the same api as useState
-      const valueToStore = value instanceof Function ? value(storedValue) : value;
+      const valueToStore =
+        value instanceof Function ? value(storedValue) : value;
       // save state
       setStoredValue(valueToStore);
       // save to local storage
@@ -79,8 +78,7 @@ function storeScungusSession(key: string, value: Number) {
       console.log(error);
     }
   };
-  return [storedValue, setValue]
-};
+  return [storedValue, setValue];
+}
 
 export { storeScungusLocally, storeScungusSession };
-
