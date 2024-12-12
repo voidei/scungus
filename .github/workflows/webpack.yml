@@ -8,6 +8,7 @@ on:
       - src/**
       - public/**
       - scripts/**
+      - .github/**
   workflow_dispatch:
 
 permissions:
